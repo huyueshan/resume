@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <title>滚动条插件</title>
+        <link href="css/style.min.css" rel="stylesheet">
+        <style>
+            body{background-color:#fff;}
+            #demo{ width: 350px;height: 250px;overflow: hidden;position: relative;}
+        </style>
+    </head>
+    <body>
+        <div id="demo">
+            <img alt="" src="../images/img/photoshop.jpg"/>
+        </div>
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <script src="js/scrollbar.min.js"></script>
+        <script src="js/mousewheel.min.js"></script>
+        <script>
+            $(function () {
+                $("#demo").perfectScrollbar();
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图插件</title>
+</head>
+<style type="text/css">
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+body{background-color:#fff;}
+.ban{ width:500px; height:320px; position:relative; overflow:hidden;margin:10px;}
+.ban2{ width:500px; height:240px; position:relative; overflow:hidden;}
+.ban2 ul{ position:absolute; left:0; top:0;}
+.ban2 ul li{ width:500px; height:240px;}
+.prev{ float:left; cursor:pointer;}
+.num{ height:40px;overflow:hidden; width:430px; position:relative;float:left;}
+.min_pic{ padding-top:10px; width:500px;}
+.num ul{ position:absolute; left:0; top:0;}
+.num ul li{ width:80px; height:38px; margin-right:5px; padding:1px;}
+.num ul li.on{ border:1px solid red; padding:0;}
+.prev_btn1{ width:16px; text-align:center; height:18px; margin-top:12px; margin-right:20px; cursor:pointer; float:left;}
+.next_btn1{  width:16px; text-align:center; height:18px; margin-top:12px;cursor:pointer;float:right;}
+.prev1{ position:absolute; top:96px; left:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.next1{ position:absolute; top:96px; right:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.mhc{ background:#000; width:100%;opacity:0.5;-moz-opacity:0.5;filter:alpha(Opacity=50); position:absolute; left:0; top:0; display:none;}
+.pop_up{ width:500px; height:240px; padding:10px; background:#fff; position:fixed; -position:absolute; left:50%; top:50%; margin-left:-255px; margin-top:-255px; display:none; z-index:99;}
+.pop_up_xx{ width:40px; height:40px; position:absolute; top:-40px; right:0; cursor:pointer;}
+.pop_up2{ width:500px; height:240px; position:relative; overflow:hidden;}
+.pop_up2{ width:500px; height:240px; position:relative; overflow:hidden; float:left;}
+.pop_up2 ul{ position:absolute; left:0; top:0;}
+.pop_up2 ul li{ width:500px; height:240px; float:left;}
+</style>
+<body>
+<div class="ban" id="demo1">
+	<div class="ban2" id="ban_pic1">
+		<div class="prev1" id="prev1">
+			<img src="images/index_tab_l.png" width="28" height="51"  />
+		</div>
+		<div class="next1" id="next1">
+			<img src="images/index_tab_r.png" width="28" height="51"  />
+		</div>
+		<ul>
+			<li><a href="javascript:;"><img src="../images/img/photoshop.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/html.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/css.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/javascript.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/jquery.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/bootstrap.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/axure.jpg" width="500" height="240" /></a></li>
+			<li><a href="javascript:;"><img src="../images/img/other.jpg" width="500" height="240" /></a></li>
+		</ul>
+	</div>
+	<div class="min_pic">
+		<div class="prev_btn1" id="prev_btn1"><img src="images/feel3.png" width="9" height="18"  /></div>
+		<div class="num clearfix" id="ban_num1">
+			<ul>
+				<li><a href="javascript:;"><img src="../images/img/photoshop.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/html.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/css.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/javascript.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/jquery.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/bootstrap.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/axure.jpg" width="80" height="38" /></a></li>
+				<li><a href="javascript:;"><img src="../images/img/other.jpg" width="80" height="38" /></a></li>
+			</ul>
+		</div>
+		<div class="next_btn1" id="next_btn1"><img src="images/feel4.png" width="9" height="18"  /></div>
+	</div>
+</div>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="js/lunbotu.js"></script>
+</body>
+</html>

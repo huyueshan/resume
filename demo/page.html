@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>分页插件</title>
+    <link rel="stylesheet" type="text/css" href="css/paging.css">
+</head>
+<body>
+    <div id="pageToolbar"></div>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="js/query.js"></script>
+    <script src="js/paging.js"></script>
+    <script>
+        $('#pageToolbar').Paging({pagesize:5,count:42,toolbar:true,callback:function(page,size,count){
+        }});
+    </script>
+</body>
+</html>
